@@ -101,7 +101,7 @@
 </main>
 
 <footer>
-    <p>&copy; 2024 Apprendre HTML. Tous droits réservés.</p>
+    <p>&copy; 2024 Html course. Tous droits réservés.</p>
 </footer>
 
 </body>
