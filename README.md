@@ -1,4 +1,3 @@
-
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -48,12 +47,32 @@
             background-color: #333;
             color: #fff;
         }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: #00eeff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Apprendre les Bases de HTML</h1>
+    <div class="navbar">
+        <a href="/go.html">GO</a>
+        <a href="/pythone.html">Pythone</a>
+    </div>
 </header>
 
 <main>
