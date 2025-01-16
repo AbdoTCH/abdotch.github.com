@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/164911425?v=4" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Abdo1115 - GitHub</title>
+    <style>
+        :root {
+            --bg-light: #f4f4f9;
+            --text-light: #333;
+            --bg-dark: #121212;
+            --text-dark: #e0e0e0;
+            --primary: #0366d6;
+            --primary-hover: #024c9d;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #24292e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-info h2 {
+            margin: 0 0 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .theme-toggle {
+            margin: 10px;
+            text-align: center;
+        }
+        .theme-toggle button {
+            padding: 10px 20px;
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .theme-toggle button:hover {
+            background: var(--primary-hover);
+        }
+
+        body.dark {
+            background-color: var(--bg-dark);
+            color: var(--text-dark);
+        }
+        body.dark .container {
+            background: #1e1e1e;
+        }
+        hr {
+        border: 0;
+        height: 1px;
+        background: #0077ff;
+        margin: 25px 0;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le Profil GitHub d'Abdo1115</h1>
+    </header>
+    <div class="theme-toggle">
+        <button id="toggle-theme">Activer le mode sombre</button>
+    </div>
+    <div class="container">
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/164911425?v=4" alt="Photo de profil">
+            <div class="profile-info">
+                <h2>Abdo TCH</h2>
+                <p>Développeur passionné et résolveur de problèmes. J'adore travailler avec différents langages et outils de programmation pour créer des solutions innovantes et efficaces. N'hésitez pas à explorer mes référentiels, à contribuer et à communiquer avec moi !</p>
+                <a href="https://github.com/Abdo1115" target="_blank" class="btn">Visitez mon GitHub</a>
+            </div>
+        </div>
+        <div class="about">
+            <h3>🚀 À propos de moi</h3>
+            <ul>
+                <li>🔭 Je travaille actuellement sur <strong>My Personal Windows</strong>.</li>
+                <li>🌱 J'explore de nouvelles technologies, actuellement <strong>[Technologie/Langue que vous apprenez]</strong>.</li>
+                <li>👯 Je cherche à collaborer sur des projets liés à <strong>[domaines d'intérêt spécifiques]</strong>.</li>
+                <li>🤔 Je suis ouvert aux suggestions d'amélioration et de collaboration.</li>
+                <li>💬 Posez-moi des questions sur <strong>[Sujets que vous connaissez ou sur lesquels vous êtes prêt à aider]</strong>.</li>
+                <li>📫 Comment me contacter : <strong><a href="mailto:hppro1209@outlook.fr">My Mail</a></strong>.</li>
+            </ul>
+            <hr>
+        </div>
+        <div class="skills">
+            <h3>🛠️ Technologies et outils</h3>
+            <ul>
+                <td>
+                <li><strong>Langues :</strong> JavaScript, Python, Java, C++, HTML/CSS, etc.</li>
+                <li><strong>Outils et frameworks :</strong> React, Node.js, Django, Flask, etc.</li>
+                <li><strong>Contrôle de version :</strong> Git, GitHub</li>
+                <li><strong>Bases de données :</strong> MySQL, PostgreSQL, MongoDB</li>
+                <li><strong>Cloud et DevOps :</strong> AWS, Docker, Kubernetes</li>
+            </ul>
+        </td>
+            <hr>
+        </div>
+        <div class="stats">
+            <h3>🏆 Statistiques GitHub</h3>
+            <img src="https://github-readme-stats.vercel.app/api?username=abdo1115&show_icons=true&hide_title=true&count_private=true&hide=prs" alt="Vos statistiques GitHub">
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.getElementById('toggle-theme');
+        const themeIcon = document.getElementById('theme-icon');
+        toggleButton.addEventListener('click', () => {
+            const isDarkMode = document.body.classList.toggle('dark');
+            toggleButton.textContent = isDarkMode ? 'Désactiver le mode sombre' : 'Activer le mode sombre';
+            themeIcon.src = isDarkMode
+                ? 'https://cdn-icons-png.flaticon.com/512/706/706830.png' // Moon icon
+                : 'https://cdn-icons-png.flaticon.com/512/846/846979.png'; // Sun icon
+            themeIcon.alt = isDarkMode ? 'Dark Mode' : 'Light Mode';
+        });
+    </script>
+</body>
+</html>
